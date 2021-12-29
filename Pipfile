@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "==2.26.0"
+pydantic = "==1.8.2"
+
+[dev-packages]
+build = "==0.7.0"
+hathorsdk = {editable = true, path = "."}
+twine = "==3.7.1"
+pytest = "==6.2.5"
+
+[requires]
+python_version = "3.9"
