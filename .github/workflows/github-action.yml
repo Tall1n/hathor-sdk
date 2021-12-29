@@ -2,10 +2,9 @@
 name: Python package testing
 
 on:
+  workflow_dispatch:
   push:
-    branches: [ $default-branch ]
   pull_request:
-    branches: [ $default-branch ]
 
 jobs:
   job:
@@ -14,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [ "3.6",  "3.7",  "3.8", "3.9", "3.10" ]
+        python-version: [ "3.7",  "3.8", "3.9", "3.10" ]
 
     steps:
     - uses: actions/checkout@v2
@@ -24,9 +23,8 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        python -m pip install pipenv
-        pipenv install --dev
+        pip install pipenv
+        pipenv install --dev --python ${{ matrix.python-version }}
     - name: Test with pytest
       run: |
         pipenv run pytest -v

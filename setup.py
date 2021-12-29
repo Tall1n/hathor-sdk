@@ -35,7 +35,6 @@ setup(
         'License :: OSI Approved :: MIT License',
         "Operating System :: OS Independent",
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
@@ -47,7 +46,7 @@ setup(
 
     # keywords='sample, setuptools, development',  # Optional
     # packages=find_packages(where='hathorsdk'),  # Required
-    python_requires='>=3.6, <4',
+    python_requires='>=3.7, <4',
 
     # List additional URLs that are relevant to your project as a dict.
     #
