@@ -12,6 +12,7 @@ build = "==0.7.0"
 hathorsdk = {editable = true, path = "."}
 twine = "==3.7.1"
 pytest = "==6.2.5"
+atomicwrites = "==1.4.0"
 
 [requires]
 python_version = "3.9"

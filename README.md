@@ -245,3 +245,5 @@ Real PyPi:
 pipenv run twine upload dist/* -u __token__ -p $PYPI_TOKEN --verbose
 ```
 
+# TODO:
+Switch to a more established Readme structure like https://github.com/KatherineMichel/setting-up-an-open-source-project/blob/master/example-README-structure.md
