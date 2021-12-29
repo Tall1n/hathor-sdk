@@ -1,0 +1,78 @@
+notifications:
+  email: false
+
+stages:
+  - test
+
+matrix:
+  include:
+    - sudo: required
+      language: python
+      python:
+        - "3.6"
+      env:
+        - PIPENV_VENV_IN_PROJECT=1
+        - PIPENV_IGNORE_VIRTUALENVS=1
+      # command to install dependencies
+      install:
+        - pip install pipenv
+        - pipenv install --dev -e . --skip-lock
+      # command to run tests
+      script:
+        - pipenv run pytest -v
+    - sudo: required
+      language: python
+      python:
+        - "3.7"
+      env:
+        - PIPENV_VENV_IN_PROJECT=1
+        - PIPENV_IGNORE_VIRTUALENVS=1
+      # command to install dependencies
+      install:
+        - pip install pipenv
+        - pipenv install --dev -e . --skip-lock
+      # command to run tests
+      script:
+        - pipenv run pytest -v
+    - sudo: required
+      language: python
+      python:
+        - "3.8"
+      env:
+        - PIPENV_VENV_IN_PROJECT=1
+        - PIPENV_IGNORE_VIRTUALENVS=1
+      # command to install dependencies
+      install:
+        - pip install pipenv
+        - pipenv install --dev -e . --skip-lock
+      # command to run tests
+      script:
+        - pipenv run pytest -v
+    - sudo: required
+      language: python
+      python:
+        - "3.9"
+      env:
+        - PIPENV_VENV_IN_PROJECT=1
+        - PIPENV_IGNORE_VIRTUALENVS=1
+      # command to install dependencies
+      install:
+        - pip install pipenv
+        - pipenv install --dev -e . --skip-lock
+      # command to run tests
+      script:
+        - pipenv run pytest -v
+    - sudo: required
+      language: python
+      python:
+        - "3.10"
+      env:
+        - PIPENV_VENV_IN_PROJECT=1
+        - PIPENV_IGNORE_VIRTUALENVS=1
+      # command to install dependencies
+      install:
+        - pip install pipenv
+        - pipenv install --dev -e . --skip-lock
+      # command to run tests
+      script:
+        - pipenv run pytest -v
