@@ -1,7 +1,7 @@
 # hathor-sdk
-[![Python package testing](https://github.com/Tall1n/hathor-sdk/actions/workflows/github-action.yml/badge.svg)](https://github.com/Tall1n/hathor-sdk/actions/workflows/github-action.yml)
+[![Pytest](https://github.com/Tall1n/hathor-sdk/actions/workflows/github-action.yml/badge.svg)](https://github.com/Tall1n/hathor-sdk/actions/workflows/github-action.yml)
 
-python sdk for interaction with the hathor blockchain. Pull requests are welcome.
+Python sdk for interaction with the hathor blockchain. Pull requests are welcome.
 
 # Usage
 
