@@ -1,5 +1,5 @@
 
-name: Python package testing
+name: Pytest
 
 on:
   workflow_dispatch:
