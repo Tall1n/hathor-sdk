@@ -130,3 +130,6 @@ dmypy.json
 
 # Pycharm config
 .idea/
+
+# including the pyproject.toml breaks the wheel build because of a setuptools error
+/pyproject.toml
